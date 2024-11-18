@@ -1,0 +1,15 @@
+javac -cp ".;lib/mysql-connector-j-9.1.0.jar" src/Jdbc.java
+java -cp ".;lib/mysql-connector-j-9.1.0.jar;src" Jdbc
+
+
+before this have a folder gfg under src/jdbc.java
+in lib jar file
+
+SQL Commands: 
+ 
+CREATE DATABASE mydb; 
+USE mydb; 
+CREATE TABLE users ( 
+ 	id INT AUTO_INCREMENT PRIMARY KEY,  	name VARCHAR(100) NOT NULL,  	email VARCHAR(100) NOT NULL UNIQUE,  	password VARCHAR(255) NOT NULL, 
+ 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
+);  
